@@ -17,4 +17,5 @@ import org.junit.runner.RunWith;
         // dryRun = true  olursa, eksik olan methodları bulur ve size öneride bulunur.
 )
 public class AmazonRunner {
+
 }

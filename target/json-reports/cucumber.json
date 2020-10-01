@@ -3,96 +3,56 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-09-24T19:51:09.104Z",
-        "before": [
-          {
-            "result": {
-              "duration": 4000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepdefinitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 11,
-        "name": "TC_07 kullanici walmartta aramalar yapar",
+        "line": 3,
+        "name": "Koala Palace Admin Giris",
         "description": "",
-        "id": "walmartda-arama;tc-07-kullanici-walmartta-aramalar-yapar;aranacak-urunler;2",
-        "after": [
-          {
-            "result": {
-              "duration": 1479000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
+        "type": "background",
+        "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 23164000000,
+              "duration": 9660000000,
               "status": "passed"
             },
             "line": 4,
-            "name": "kullanici walmart \"https://www.walmart.com\" sayfasina gider",
+            "name": "kullanici koalapalace admin sayfasina gider",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"https://www.walmart.com\"",
-                  "offset": 18
-                }
-              ],
-              "location": "stepdefinitions.WalmartStepDefinitions.kullanici_walmart_sayfasina_gider(java.lang.String)"
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_koalapalace_admin_sayfasina_gider()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 23170000000,
+              "duration": 291000000,
               "status": "passed"
             },
             "line": 5,
-            "name": "kulanici walmart aramakutusunda \"calculator\" arar",
+            "name": "kullanici kullaniciadi ve sifresini girer",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"calculator\"",
-                  "offset": 32
-                }
-              ],
-              "location": "stepdefinitions.WalmartStepDefinitions.kulanici_walmart_aramakutusunda_arar(java.lang.String)"
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_kullaniciadi_ve_sifresini_girer()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 129000000,
+              "duration": 10990000000,
               "status": "passed"
             },
             "line": 6,
-            "name": "kullanici walmartda cikan sonucu yazdirir",
+            "name": "kullanici giris islemini gerceklestirir",
             "match": {
-              "location": "stepdefinitions.WalmartStepDefinitions.kullanici_walmartda_cikan_sonucu_yazdirir()"
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_giris_islemini_gerceklestirir()"
             },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@walmart"
+            "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2020-09-24T19:51:57.069Z",
+        "start_timestamp": "2020-09-30T19:49:04.221Z",
         "before": [
           {
             "result": {
+              "duration": 2000000,
               "status": "passed"
             },
             "match": {
@@ -100,14 +60,14 @@
             }
           }
         ],
-        "line": 12,
-        "name": "TC_07 kullanici walmartta aramalar yapar",
+        "line": 51,
+        "name": "TC12_kullanici iduser secmeden room reservation olusturur",
         "description": "",
-        "id": "walmartda-arama;tc-07-kullanici-walmartta-aramalar-yapar;aranacak-urunler;3",
+        "id": "koala-palace;tc12-kullanici-iduser-secmeden-room-reservation-olusturur",
         "after": [
           {
             "result": {
-              "duration": 14069000000,
+              "duration": 1247000000,
               "status": "passed"
             },
             "match": {
@@ -116,127 +76,161 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 4849000000,
+              "duration": 864000000,
               "status": "passed"
             },
-            "line": 4,
-            "name": "kullanici walmart \"https://www.walmart.com\" sayfasina gider",
+            "line": 52,
+            "name": "kullanici hotelroomreservation sayfasina gider",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"https://www.walmart.com\"",
-                  "offset": 18
-                }
-              ],
-              "location": "stepdefinitions.WalmartStepDefinitions.kullanici_walmart_sayfasina_gider(java.lang.String)"
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hotelroomreservation_sayfasina_gider()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1845000000,
+              "duration": 230000000,
               "status": "passed"
             },
-            "line": 5,
-            "name": "kulanici walmart aramakutusunda \"watch\" arar",
+            "line": 54,
+            "name": "kullanici roomreservation idhotelroom bolumunde \"Hilton\" secer",
             "match": {
               "arguments": [
                 {
-                  "val": "\"watch\"",
-                  "offset": 32
+                  "val": "\"Hilton\"",
+                  "offset": 48
                 }
               ],
-              "location": "stepdefinitions.WalmartStepDefinitions.kulanici_walmart_aramakutusunda_arar(java.lang.String)"
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_idhotelroom_bolumunde_secer(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 1501000000,
+              "duration": 139000000,
               "status": "passed"
             },
-            "line": 6,
-            "name": "kullanici walmartda cikan sonucu yazdirir",
-            "match": {
-              "location": "stepdefinitions.WalmartStepDefinitions.kullanici_walmartda_cikan_sonucu_yazdirir()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@walmart"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-09-24T19:52:19.340Z",
-        "before": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepdefinitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 13,
-        "name": "TC_07 kullanici walmartta aramalar yapar",
-        "description": "",
-        "id": "walmartda-arama;tc-07-kullanici-walmartta-aramalar-yapar;aranacak-urunler;4",
-        "after": [
-          {
-            "result": {
-              "error_message": "org.openqa.selenium.WebDriverException: unknown error: failed to change window state to \u0027normal\u0027, current state is \u0027maximized\u0027\n  (Session info: chrome\u003d85.0.4183.121)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LEVENT\u0027, ip: \u0027192.168.1.53\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_261\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\\Users\\mk201\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61653}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 7680ac1850e7085d83cb3cf37949a356\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)\r\n\tat utilities.Driver.getDriver(Driver.java:44)\r\n\tat stepdefinitions.Hooks.tearDown(Hooks.java:21)\r\n",
-              "duration": 297000000,
-              "status": "failed"
-            },
-            "match": {
-              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 5076000000,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "kullanici walmart \"https://www.walmart.com\" sayfasina gider",
+            "line": 55,
+            "name": "kullanici roomreservation price bolumune \"500\" girer",
             "match": {
               "arguments": [
                 {
-                  "val": "\"https://www.walmart.com\"",
-                  "offset": 18
+                  "val": "\"500\"",
+                  "offset": 41
                 }
               ],
-              "location": "stepdefinitions.WalmartStepDefinitions.kullanici_walmart_sayfasina_gider(java.lang.String)"
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_price_bolumune_girer(java.lang.String)"
             },
-            "keyword": "Given "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 12149000000,
+              "duration": 261000000,
               "status": "passed"
             },
-            "line": 5,
-            "name": "kulanici walmart aramakutusunda \"flower\" arar",
+            "line": 56,
+            "name": "kullanici roomreservation datestart bolumune \"10/10/2020\" girer",
             "match": {
               "arguments": [
                 {
-                  "val": "\"flower\"",
-                  "offset": 32
+                  "val": "\"10/10/2020\"",
+                  "offset": 45
                 }
               ],
-              "location": "stepdefinitions.WalmartStepDefinitions.kulanici_walmart_aramakutusunda_arar(java.lang.String)"
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_datestart_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 243000000,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "kullanici roomreservation dateend bolumune \"10/17/2020\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"10/17/2020\"",
+                  "offset": 43
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_dateend_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 112000000,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "kullanici roomreservation adultamaount bolumune \"2\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2\"",
+                  "offset": 48
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_adultamaount_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 122000000,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "kullanici roomreservation childrenamount bolumune \"3\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"3\"",
+                  "offset": 50
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_childrenamount_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 149000000,
+              "status": "passed"
+            },
+            "line": 60,
+            "name": "kullanici roomreservation namesurname bolumune \"Hamza Yılmaz\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Hamza Yılmaz\"",
+                  "offset": 47
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_namesurname_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 149000000,
+              "status": "passed"
+            },
+            "line": 61,
+            "name": "kullanici roomreservation phone bolumune \"0500600700\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"0500600700\"",
+                  "offset": 41
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_phone_bolumune_girer(java.lang.String)"
             },
             "keyword": "And "
           },
@@ -245,141 +239,124 @@
               "duration": 164000000,
               "status": "passed"
             },
-            "line": 6,
-            "name": "kullanici walmartda cikan sonucu yazdirir",
-            "match": {
-              "location": "stepdefinitions.WalmartStepDefinitions.kullanici_walmartda_cikan_sonucu_yazdirir()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@walmart"
-          }
-        ]
-      }
-    ],
-    "name": "Walmartda arama",
-    "description": "",
-    "id": "walmartda-arama",
-    "keyword": "Feature",
-    "uri": "file:src/test/resources/features/walmart.feature",
-    "tags": [
-      {
-        "name": "@walmart",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      }
-    ]
-  }
-]5,
-            "name": "kullanici dropdownda \"Books\" secer",
+            "line": 62,
+            "name": "kullanici roomreservation email bolumune \"hamza@gmail.com\" girer",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Books\"",
-                  "offset": 21
+                  "val": "\"hamza@gmail.com\"",
+                  "offset": 41
                 }
               ],
-              "location": "stepdefinitions.AmazonStepDefinitions.kullanici_dropdownda_secer(java.lang.String)"
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_email_bolumune_girer(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 3580000000,
+              "duration": 167000000,
               "status": "passed"
             },
-            "line": 6,
-            "name": "kullanici \"Miserables\" aramasi yapar",
+            "line": 63,
+            "name": "kullanici roomreservation notes bolumune \"Testerlardan selam..\" girer",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Miserables\"",
-                  "offset": 10
+                  "val": "\"Testerlardan selam..\"",
+                  "offset": 41
                 }
               ],
-              "location": "stepdefinitions.AmazonStepDefinitions.kullanici_aramasi_yapar(java.lang.String)"
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_notes_bolumune_girer(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 2179000000,
+              "duration": 206000000,
               "status": "passed"
             },
-            "line": 7,
-            "name": "kullanici cikan sonucu yazdirir",
+            "line": 64,
+            "name": "kullanici roomreservation save butonuna tiklar",
             "match": {
-              "location": "stepdefinitions.AmazonStepDefinitions.kullanici_cikan_sonucu_yazdirir()"
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_save_butonuna_tiklar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 169000000,
+              "status": "passed"
+            },
+            "line": 65,
+            "name": "kullanici roomreservation kayit isleminin basarisiz oldugunu assert eder",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_kayit_isleminin_basarisiz_oldugunu_assert_eder()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@birdenfazlaexample"
+            "name": "@koalapalace"
           },
           {
-            "name": "@amazon"
+            "name": "@hotelreservationcreate"
+          },
+          {
+            "name": "@hotelreservationnegativetests"
+          },
+          {
+            "name": "@hotelreservationnegativetest1"
           }
         ]
-      }
-    ],
-    "name": "Amazonda Urun Arama",
-    "description": "",
-    "id": "amazonda-urun-arama",
-    "keyword": "Feature",
-    "uri": "file:src/test/resources/features/amazonexamples.feature",
-    "tags": [
-      {
-        "name": "@birdenfazlaexample",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
       },
       {
-        "name": "@amazon",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 21
-        }
-      }
-    ]
-  },
-  {
-    "line": 2,
-    "elements": [
-      {
-        "line": 4,
-        "name": "Oncesinde Calisacak Method (before class)",
+        "line": 3,
+        "name": "Koala Palace Admin Giris",
         "description": "",
         "type": "background",
         "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 3998000000,
+              "duration": 7843000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "kullanici koalapalace admin sayfasina gider",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_koalapalace_admin_sayfasina_gider()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 286000000,
               "status": "passed"
             },
             "line": 5,
-            "name": "kullanici amazon sayfasina gider",
+            "name": "kullanici kullaniciadi ve sifresini girer",
             "match": {
-              "location": "stepdefinitions.AmazonStepDefinitions.kullanici_amazon_sayfasina_gider()"
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_kullaniciadi_ve_sifresini_girer()"
             },
-            "keyword": "Given "
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11097000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "kullanici giris islemini gerceklestirir",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_giris_islemini_gerceklestirir()"
+            },
+            "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2020-09-24T19:51:46.760Z",
+        "start_timestamp": "2020-09-30T19:49:29.620Z",
         "before": [
           {
             "result": {
@@ -390,14 +367,14 @@
             }
           }
         ],
-        "line": 8,
-        "name": "TC02_ kullanici amazonda arama yapar",
+        "line": 69,
+        "name": "TC13_kullanici idhotelroom secmeden room reservation olusturur",
         "description": "",
-        "id": "amazon-arama;tc02--kullanici-amazonda-arama-yapar",
+        "id": "koala-palace;tc13-kullanici-idhotelroom-secmeden-room-reservation-olusturur",
         "after": [
           {
             "result": {
-              "duration": 7212000000,
+              "duration": 1269000000,
               "status": "passed"
             },
             "match": {
@@ -410,75 +387,287 @@
         "steps": [
           {
             "result": {
-              "duration": 3699000000,
+              "duration": 1162000000,
               "status": "passed"
             },
-            "line": 10,
-            "name": "kullanici headphones aramasi yapar",
+            "line": 70,
+            "name": "kullanici hotelroomreservation sayfasina gider",
             "match": {
-              "location": "stepdefinitions.AmazonStepDefinitions.kullanici_headphones_aramasi_yapar()"
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hotelroomreservation_sayfasina_gider()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 180000000,
+              "status": "passed"
+            },
+            "line": 71,
+            "name": "kullanici roomreservation iduser bolumunde \"manager2\" secer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"manager2\"",
+                  "offset": 43
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_iduser_bolumunde_secer(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 66000000,
+              "duration": 123000000,
               "status": "passed"
             },
-            "line": 11,
-            "name": "kullanici cikan sonucu yazdirir",
+            "line": 73,
+            "name": "kullanici roomreservation price bolumune \"500\" girer",
             "match": {
-              "location": "stepdefinitions.AmazonStepDefinitions.kullanici_cikan_sonucu_yazdirir()"
+              "arguments": [
+                {
+                  "val": "\"500\"",
+                  "offset": 41
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_price_bolumune_girer(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 1773000000,
+              "duration": 265000000,
               "status": "passed"
             },
-            "line": 12,
-            "name": "kullanici driveri kapatir",
+            "line": 74,
+            "name": "kullanici roomreservation datestart bolumune \"10/10/2020\" girer",
             "match": {
-              "location": "stepdefinitions.AmazonStepDefinitions.kullanici_driveri_kapatir()"
+              "arguments": [
+                {
+                  "val": "\"10/10/2020\"",
+                  "offset": 45
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_datestart_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 245000000,
+              "status": "passed"
+            },
+            "line": 75,
+            "name": "kullanici roomreservation dateend bolumune \"10/17/2020\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"10/17/2020\"",
+                  "offset": 43
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_dateend_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 118000000,
+              "status": "passed"
+            },
+            "line": 76,
+            "name": "kullanici roomreservation adultamaount bolumune \"2\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2\"",
+                  "offset": 48
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_adultamaount_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 108000000,
+              "status": "passed"
+            },
+            "line": 77,
+            "name": "kullanici roomreservation childrenamount bolumune \"3\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"3\"",
+                  "offset": 50
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_childrenamount_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 137000000,
+              "status": "passed"
+            },
+            "line": 78,
+            "name": "kullanici roomreservation namesurname bolumune \"Hamza Yılmaz\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Hamza Yılmaz\"",
+                  "offset": 47
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_namesurname_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 143000000,
+              "status": "passed"
+            },
+            "line": 79,
+            "name": "kullanici roomreservation phone bolumune \"0500600700\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"0500600700\"",
+                  "offset": 41
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_phone_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 205000000,
+              "status": "passed"
+            },
+            "line": 80,
+            "name": "kullanici roomreservation email bolumune \"hamza@gmail.com\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"hamza@gmail.com\"",
+                  "offset": 41
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_email_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 176000000,
+              "status": "passed"
+            },
+            "line": 81,
+            "name": "kullanici roomreservation notes bolumune \"Testerlardan selam..\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Testerlardan selam..\"",
+                  "offset": 41
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_notes_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 153000000,
+              "status": "passed"
+            },
+            "line": 82,
+            "name": "kullanici roomreservation save butonuna tiklar",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_save_butonuna_tiklar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 109000000,
+              "status": "passed"
+            },
+            "line": 83,
+            "name": "kullanici roomreservation kayit isleminin basarisiz oldugunu assert eder",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_kayit_isleminin_basarisiz_oldugunu_assert_eder()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@urunarama"
+            "name": "@koalapalace"
           },
           {
-            "name": "@amazon"
+            "name": "@hotelreservationcreate"
+          },
+          {
+            "name": "@hotelreservationnegativetests"
+          },
+          {
+            "name": "@hotelreservationnegativetest2"
           }
         ]
-      }
-    ],
-    "name": "Amazon Arama",
-    "description": "",
-    "id": "amazon-arama",
-    "keyword": "Feature",
-    "uri": "file:src/test/resources/features/amazonsearch.feature",
-    "tags": [
+      },
       {
-        "name": "@urunarama",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      }
-    ]
-  },
-  {
-    "line": 2,
-    "elements": [
+        "line": 3,
+        "name": "Koala Palace Admin Giris",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7747000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "kullanici koalapalace admin sayfasina gider",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_koalapalace_admin_sayfasina_gider()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 321000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "kullanici kullaniciadi ve sifresini girer",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_kullaniciadi_ve_sifresini_girer()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6605000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "kullanici giris islemini gerceklestirir",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_giris_islemini_gerceklestirir()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
       {
-        "start_timestamp": "2020-09-24T19:52:03.517Z",
+        "start_timestamp": "2020-09-30T19:49:53.261Z",
         "before": [
           {
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -486,14 +675,14 @@
             }
           }
         ],
-        "line": 3,
-        "name": "TC04_kullanici amazonda urun aramasi yapar",
+        "line": 87,
+        "name": "TC14_kullanici price secmeden room reservation olusturur",
         "description": "",
-        "id": "amazon-zurun-arama;tc04-kullanici-amazonda-urun-aramasi-yapar",
+        "id": "koala-palace;tc14-kullanici-price-secmeden-room-reservation-olusturur",
         "after": [
           {
             "result": {
-              "duration": 621000000,
+              "duration": 1245000000,
               "status": "passed"
             },
             "match": {
@@ -506,77 +695,2399 @@
         "steps": [
           {
             "result": {
-              "duration": 8001000000,
+              "duration": 810000000,
               "status": "passed"
             },
-            "line": 4,
-            "name": "kullanici amazon sayfasina gider",
+            "line": 88,
+            "name": "kullanici hotelroomreservation sayfasina gider",
             "match": {
-              "location": "stepdefinitions.AmazonStepDefinitions.kullanici_amazon_sayfasina_gider()"
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hotelroomreservation_sayfasina_gider()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 6315000000,
+              "duration": 185000000,
               "status": "passed"
             },
-            "line": 5,
-            "name": "kullanici \"drone\" aramasi yapar",
+            "line": 89,
+            "name": "kullanici roomreservation iduser bolumunde \"manager2\" secer",
             "match": {
               "arguments": [
                 {
-                  "val": "\"drone\"",
-                  "offset": 10
+                  "val": "\"manager2\"",
+                  "offset": 43
                 }
               ],
-              "location": "stepdefinitions.AmazonStepDefinitions.kullanici_aramasi_yapar(java.lang.String)"
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_iduser_bolumunde_secer(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 1435000000,
+              "duration": 268000000,
               "status": "passed"
             },
-            "line": 6,
-            "name": "kullanici cikan sonucu yazdirir",
+            "line": 90,
+            "name": "kullanici roomreservation idhotelroom bolumunde \"Hilton\" secer",
             "match": {
-              "location": "stepdefinitions.AmazonStepDefinitions.kullanici_cikan_sonucu_yazdirir()"
+              "arguments": [
+                {
+                  "val": "\"Hilton\"",
+                  "offset": 48
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_idhotelroom_bolumunde_secer(java.lang.String)"
             },
             "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 378000000,
+              "status": "passed"
+            },
+            "line": 92,
+            "name": "kullanici roomreservation datestart bolumune \"10/10/2020\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"10/10/2020\"",
+                  "offset": 45
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_datestart_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 366000000,
+              "status": "passed"
+            },
+            "line": 93,
+            "name": "kullanici roomreservation dateend bolumune \"10/17/2020\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"10/17/2020\"",
+                  "offset": 43
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_dateend_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 218000000,
+              "status": "passed"
+            },
+            "line": 94,
+            "name": "kullanici roomreservation adultamaount bolumune \"2\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2\"",
+                  "offset": 48
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_adultamaount_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 286000000,
+              "status": "passed"
+            },
+            "line": 95,
+            "name": "kullanici roomreservation childrenamount bolumune \"3\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"3\"",
+                  "offset": 50
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_childrenamount_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 203000000,
+              "status": "passed"
+            },
+            "line": 96,
+            "name": "kullanici roomreservation namesurname bolumune \"Hamza Yılmaz\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Hamza Yılmaz\"",
+                  "offset": 47
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_namesurname_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 175000000,
+              "status": "passed"
+            },
+            "line": 97,
+            "name": "kullanici roomreservation phone bolumune \"0500600700\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"0500600700\"",
+                  "offset": 41
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_phone_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 195000000,
+              "status": "passed"
+            },
+            "line": 98,
+            "name": "kullanici roomreservation email bolumune \"hamza@gmail.com\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"hamza@gmail.com\"",
+                  "offset": 41
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_email_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 218000000,
+              "status": "passed"
+            },
+            "line": 99,
+            "name": "kullanici roomreservation notes bolumune \"Testerlardan selam..\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Testerlardan selam..\"",
+                  "offset": 41
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_notes_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 136000000,
+              "status": "passed"
+            },
+            "line": 100,
+            "name": "kullanici roomreservation save butonuna tiklar",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_save_butonuna_tiklar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 125000000,
+              "status": "passed"
+            },
+            "line": 101,
+            "name": "kullanici roomreservation kayit isleminin basarisiz oldugunu assert eder",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_kayit_isleminin_basarisiz_oldugunu_assert_eder()"
+            },
+            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@urunarama1"
+            "name": "@koalapalace"
           },
           {
-            "name": "@amazon"
+            "name": "@hotelreservationcreate"
+          },
+          {
+            "name": "@hotelreservationnegativetests"
+          },
+          {
+            "name": "@hotelreservationnegativetest3"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Koala Palace Admin Giris",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7820000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "kullanici koalapalace admin sayfasina gider",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_koalapalace_admin_sayfasina_gider()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 303000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "kullanici kullaniciadi ve sifresini girer",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_kullaniciadi_ve_sifresini_girer()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7647000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "kullanici giris islemini gerceklestirir",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_giris_islemini_gerceklestirir()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-09-30T19:50:12.761Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 105,
+        "name": "TC15_kullanici datestart secmeden room reservation olusturur",
+        "description": "",
+        "id": "koala-palace;tc15-kullanici-datestart-secmeden-room-reservation-olusturur",
+        "after": [
+          {
+            "result": {
+              "duration": 1117000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 885000000,
+              "status": "passed"
+            },
+            "line": 106,
+            "name": "kullanici hotelroomreservation sayfasina gider",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hotelroomreservation_sayfasina_gider()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 164000000,
+              "status": "passed"
+            },
+            "line": 107,
+            "name": "kullanici roomreservation iduser bolumunde \"manager2\" secer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"manager2\"",
+                  "offset": 43
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_iduser_bolumunde_secer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 174000000,
+              "status": "passed"
+            },
+            "line": 108,
+            "name": "kullanici roomreservation idhotelroom bolumunde \"Hilton\" secer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Hilton\"",
+                  "offset": 48
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_idhotelroom_bolumunde_secer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 140000000,
+              "status": "passed"
+            },
+            "line": 109,
+            "name": "kullanici roomreservation price bolumune \"500\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"500\"",
+                  "offset": 41
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_price_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 266000000,
+              "status": "passed"
+            },
+            "line": 111,
+            "name": "kullanici roomreservation dateend bolumune \"10/17/2020\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"10/17/2020\"",
+                  "offset": 43
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_dateend_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 121000000,
+              "status": "passed"
+            },
+            "line": 112,
+            "name": "kullanici roomreservation adultamaount bolumune \"2\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2\"",
+                  "offset": 48
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_adultamaount_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 193000000,
+              "status": "passed"
+            },
+            "line": 113,
+            "name": "kullanici roomreservation childrenamount bolumune \"3\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"3\"",
+                  "offset": 50
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_childrenamount_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 159000000,
+              "status": "passed"
+            },
+            "line": 114,
+            "name": "kullanici roomreservation namesurname bolumune \"Hamza Yılmaz\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Hamza Yılmaz\"",
+                  "offset": 47
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_namesurname_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 133000000,
+              "status": "passed"
+            },
+            "line": 115,
+            "name": "kullanici roomreservation phone bolumune \"0500600700\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"0500600700\"",
+                  "offset": 41
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_phone_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 148000000,
+              "status": "passed"
+            },
+            "line": 116,
+            "name": "kullanici roomreservation email bolumune \"hamza@gmail.com\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"hamza@gmail.com\"",
+                  "offset": 41
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_email_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 175000000,
+              "status": "passed"
+            },
+            "line": 117,
+            "name": "kullanici roomreservation notes bolumune \"Testerlardan selam..\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Testerlardan selam..\"",
+                  "offset": 41
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_notes_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 136000000,
+              "status": "passed"
+            },
+            "line": 118,
+            "name": "kullanici roomreservation save butonuna tiklar",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_save_butonuna_tiklar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 118000000,
+              "status": "passed"
+            },
+            "line": 119,
+            "name": "kullanici roomreservation kayit isleminin basarisiz oldugunu assert eder",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_kayit_isleminin_basarisiz_oldugunu_assert_eder()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@koalapalace"
+          },
+          {
+            "name": "@hotelreservationcreate"
+          },
+          {
+            "name": "@hotelreservationnegativetests"
+          },
+          {
+            "name": "@hotelreservationnegativetest4"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Koala Palace Admin Giris",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7735000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "kullanici koalapalace admin sayfasina gider",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_koalapalace_admin_sayfasina_gider()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 309000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "kullanici kullaniciadi ve sifresini girer",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_kullaniciadi_ve_sifresini_girer()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7787000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "kullanici giris islemini gerceklestirir",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_giris_islemini_gerceklestirir()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-09-30T19:50:32.476Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 123,
+        "name": "TC16_kullanici dateend secmeden room reservation olusturur",
+        "description": "",
+        "id": "koala-palace;tc16-kullanici-dateend-secmeden-room-reservation-olusturur",
+        "after": [
+          {
+            "result": {
+              "duration": 1220000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 775000000,
+              "status": "passed"
+            },
+            "line": 124,
+            "name": "kullanici hotelroomreservation sayfasina gider",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hotelroomreservation_sayfasina_gider()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 187000000,
+              "status": "passed"
+            },
+            "line": 125,
+            "name": "kullanici roomreservation iduser bolumunde \"manager2\" secer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"manager2\"",
+                  "offset": 43
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_iduser_bolumunde_secer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 190000000,
+              "status": "passed"
+            },
+            "line": 126,
+            "name": "kullanici roomreservation idhotelroom bolumunde \"Hilton\" secer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Hilton\"",
+                  "offset": 48
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_idhotelroom_bolumunde_secer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 134000000,
+              "status": "passed"
+            },
+            "line": 127,
+            "name": "kullanici roomreservation price bolumune \"500\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"500\"",
+                  "offset": 41
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_price_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 259000000,
+              "status": "passed"
+            },
+            "line": 128,
+            "name": "kullanici roomreservation datestart bolumune \"10/10/2020\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"10/10/2020\"",
+                  "offset": 45
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_datestart_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 131000000,
+              "status": "passed"
+            },
+            "line": 130,
+            "name": "kullanici roomreservation adultamaount bolumune \"2\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2\"",
+                  "offset": 48
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_adultamaount_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 190000000,
+              "status": "passed"
+            },
+            "line": 131,
+            "name": "kullanici roomreservation childrenamount bolumune \"3\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"3\"",
+                  "offset": 50
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_childrenamount_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 132000000,
+              "status": "passed"
+            },
+            "line": 132,
+            "name": "kullanici roomreservation namesurname bolumune \"Hamza Yılmaz\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Hamza Yılmaz\"",
+                  "offset": 47
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_namesurname_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 127000000,
+              "status": "passed"
+            },
+            "line": 133,
+            "name": "kullanici roomreservation phone bolumune \"0500600700\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"0500600700\"",
+                  "offset": 41
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_phone_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 152000000,
+              "status": "passed"
+            },
+            "line": 134,
+            "name": "kullanici roomreservation email bolumune \"hamza@gmail.com\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"hamza@gmail.com\"",
+                  "offset": 41
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_email_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 165000000,
+              "status": "passed"
+            },
+            "line": 135,
+            "name": "kullanici roomreservation notes bolumune \"Testerlardan selam..\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Testerlardan selam..\"",
+                  "offset": 41
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_notes_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 175000000,
+              "status": "passed"
+            },
+            "line": 136,
+            "name": "kullanici roomreservation save butonuna tiklar",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_save_butonuna_tiklar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 124000000,
+              "status": "passed"
+            },
+            "line": 137,
+            "name": "kullanici roomreservation kayit isleminin basarisiz oldugunu assert eder",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_kayit_isleminin_basarisiz_oldugunu_assert_eder()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@koalapalace"
+          },
+          {
+            "name": "@hotelreservationcreate"
+          },
+          {
+            "name": "@hotelreservationnegativetests"
+          },
+          {
+            "name": "@hotelreservationnegativetest5"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Koala Palace Admin Giris",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7812000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "kullanici koalapalace admin sayfasina gider",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_koalapalace_admin_sayfasina_gider()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 394000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "kullanici kullaniciadi ve sifresini girer",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_kullaniciadi_ve_sifresini_girer()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7700000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "kullanici giris islemini gerceklestirir",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_giris_islemini_gerceklestirir()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-09-30T19:50:52.285Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 141,
+        "name": "TC17_kullanici adultamaount secmeden room reservation olusturur",
+        "description": "",
+        "id": "koala-palace;tc17-kullanici-adultamaount-secmeden-room-reservation-olusturur",
+        "after": [
+          {
+            "result": {
+              "duration": 1398000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 914000000,
+              "status": "passed"
+            },
+            "line": 142,
+            "name": "kullanici hotelroomreservation sayfasina gider",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hotelroomreservation_sayfasina_gider()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 248000000,
+              "status": "passed"
+            },
+            "line": 143,
+            "name": "kullanici roomreservation iduser bolumunde \"manager2\" secer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"manager2\"",
+                  "offset": 43
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_iduser_bolumunde_secer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 229000000,
+              "status": "passed"
+            },
+            "line": 144,
+            "name": "kullanici roomreservation idhotelroom bolumunde \"Hilton\" secer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Hilton\"",
+                  "offset": 48
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_idhotelroom_bolumunde_secer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 134000000,
+              "status": "passed"
+            },
+            "line": 145,
+            "name": "kullanici roomreservation price bolumune \"500\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"500\"",
+                  "offset": 41
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_price_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 421000000,
+              "status": "passed"
+            },
+            "line": 146,
+            "name": "kullanici roomreservation datestart bolumune \"10/10/2020\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"10/10/2020\"",
+                  "offset": 45
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_datestart_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 305000000,
+              "status": "passed"
+            },
+            "line": 147,
+            "name": "kullanici roomreservation dateend bolumune \"10/17/2020\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"10/17/2020\"",
+                  "offset": 43
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_dateend_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 214000000,
+              "status": "passed"
+            },
+            "line": 149,
+            "name": "kullanici roomreservation childrenamount bolumune \"3\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"3\"",
+                  "offset": 50
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_childrenamount_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 230000000,
+              "status": "passed"
+            },
+            "line": 150,
+            "name": "kullanici roomreservation namesurname bolumune \"Hamza Yılmaz\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Hamza Yılmaz\"",
+                  "offset": 47
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_namesurname_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 168000000,
+              "status": "passed"
+            },
+            "line": 151,
+            "name": "kullanici roomreservation phone bolumune \"0500600700\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"0500600700\"",
+                  "offset": 41
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_phone_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 185000000,
+              "status": "passed"
+            },
+            "line": 152,
+            "name": "kullanici roomreservation email bolumune \"hamza@gmail.com\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"hamza@gmail.com\"",
+                  "offset": 41
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_email_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 196000000,
+              "status": "passed"
+            },
+            "line": 153,
+            "name": "kullanici roomreservation notes bolumune \"Testerlardan selam..\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Testerlardan selam..\"",
+                  "offset": 41
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_notes_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 145000000,
+              "status": "passed"
+            },
+            "line": 154,
+            "name": "kullanici roomreservation save butonuna tiklar",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_save_butonuna_tiklar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 134000000,
+              "status": "passed"
+            },
+            "line": 155,
+            "name": "kullanici roomreservation kayit isleminin basarisiz oldugunu assert eder",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_kayit_isleminin_basarisiz_oldugunu_assert_eder()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@koalapalace"
+          },
+          {
+            "name": "@hotelreservationcreate"
+          },
+          {
+            "name": "@hotelreservationnegativetests"
+          },
+          {
+            "name": "@hotelreservationnegativetest6"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Koala Palace Admin Giris",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 8069000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "kullanici koalapalace admin sayfasina gider",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_koalapalace_admin_sayfasina_gider()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 372000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "kullanici kullaniciadi ve sifresini girer",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_kullaniciadi_ve_sifresini_girer()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7656000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "kullanici giris islemini gerceklestirir",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_giris_islemini_gerceklestirir()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-09-30T19:51:13.134Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 159,
+        "name": "TC18_kullanici childrenamount secmeden room reservation olusturur",
+        "description": "",
+        "id": "koala-palace;tc18-kullanici-childrenamount-secmeden-room-reservation-olusturur",
+        "after": [
+          {
+            "result": {
+              "duration": 1174000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1449000000,
+              "status": "passed"
+            },
+            "line": 160,
+            "name": "kullanici hotelroomreservation sayfasina gider",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hotelroomreservation_sayfasina_gider()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 169000000,
+              "status": "passed"
+            },
+            "line": 161,
+            "name": "kullanici roomreservation iduser bolumunde \"manager2\" secer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"manager2\"",
+                  "offset": 43
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_iduser_bolumunde_secer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 221000000,
+              "status": "passed"
+            },
+            "line": 162,
+            "name": "kullanici roomreservation idhotelroom bolumunde \"Hilton\" secer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Hilton\"",
+                  "offset": 48
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_idhotelroom_bolumunde_secer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 138000000,
+              "status": "passed"
+            },
+            "line": 163,
+            "name": "kullanici roomreservation price bolumune \"500\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"500\"",
+                  "offset": 41
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_price_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 270000000,
+              "status": "passed"
+            },
+            "line": 164,
+            "name": "kullanici roomreservation datestart bolumune \"10/10/2020\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"10/10/2020\"",
+                  "offset": 45
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_datestart_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 242000000,
+              "status": "passed"
+            },
+            "line": 165,
+            "name": "kullanici roomreservation dateend bolumune \"10/17/2020\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"10/17/2020\"",
+                  "offset": 43
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_dateend_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 128000000,
+              "status": "passed"
+            },
+            "line": 166,
+            "name": "kullanici roomreservation adultamaount bolumune \"2\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2\"",
+                  "offset": 48
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_adultamaount_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 158000000,
+              "status": "passed"
+            },
+            "line": 168,
+            "name": "kullanici roomreservation namesurname bolumune \"Hamza Yılmaz\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Hamza Yılmaz\"",
+                  "offset": 47
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_namesurname_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 141000000,
+              "status": "passed"
+            },
+            "line": 169,
+            "name": "kullanici roomreservation phone bolumune \"0500600700\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"0500600700\"",
+                  "offset": 41
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_phone_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 159000000,
+              "status": "passed"
+            },
+            "line": 170,
+            "name": "kullanici roomreservation email bolumune \"hamza@gmail.com\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"hamza@gmail.com\"",
+                  "offset": 41
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_email_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 158000000,
+              "status": "passed"
+            },
+            "line": 171,
+            "name": "kullanici roomreservation notes bolumune \"Testerlardan selam..\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Testerlardan selam..\"",
+                  "offset": 41
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_notes_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 150000000,
+              "status": "passed"
+            },
+            "line": 172,
+            "name": "kullanici roomreservation save butonuna tiklar",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_save_butonuna_tiklar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 113000000,
+              "status": "passed"
+            },
+            "line": 173,
+            "name": "kullanici roomreservation kayit isleminin basarisiz oldugunu assert eder",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_kayit_isleminin_basarisiz_oldugunu_assert_eder()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@koalapalace"
+          },
+          {
+            "name": "@hotelreservationcreate"
+          },
+          {
+            "name": "@hotelreservationnegativetests"
+          },
+          {
+            "name": "@hotelreservationnegativetest7"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Koala Palace Admin Giris",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7767000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "kullanici koalapalace admin sayfasina gider",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_koalapalace_admin_sayfasina_gider()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 278000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "kullanici kullaniciadi ve sifresini girer",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_kullaniciadi_ve_sifresini_girer()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9689000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "kullanici giris islemini gerceklestirir",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_giris_islemini_gerceklestirir()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-09-30T19:51:33.914Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 177,
+        "name": "TC19_kullanici namesurname secmeden room reservation olusturur",
+        "description": "",
+        "id": "koala-palace;tc19-kullanici-namesurname-secmeden-room-reservation-olusturur",
+        "after": [
+          {
+            "result": {
+              "duration": 1161000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 799000000,
+              "status": "passed"
+            },
+            "line": 178,
+            "name": "kullanici hotelroomreservation sayfasina gider",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hotelroomreservation_sayfasina_gider()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 190000000,
+              "status": "passed"
+            },
+            "line": 179,
+            "name": "kullanici roomreservation iduser bolumunde \"manager2\" secer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"manager2\"",
+                  "offset": 43
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_iduser_bolumunde_secer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 159000000,
+              "status": "passed"
+            },
+            "line": 180,
+            "name": "kullanici roomreservation idhotelroom bolumunde \"Hilton\" secer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Hilton\"",
+                  "offset": 48
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_idhotelroom_bolumunde_secer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 123000000,
+              "status": "passed"
+            },
+            "line": 181,
+            "name": "kullanici roomreservation price bolumune \"500\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"500\"",
+                  "offset": 41
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_price_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 251000000,
+              "status": "passed"
+            },
+            "line": 182,
+            "name": "kullanici roomreservation datestart bolumune \"10/10/2020\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"10/10/2020\"",
+                  "offset": 45
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_datestart_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 308000000,
+              "status": "passed"
+            },
+            "line": 183,
+            "name": "kullanici roomreservation dateend bolumune \"10/17/2020\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"10/17/2020\"",
+                  "offset": 43
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_dateend_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 159000000,
+              "status": "passed"
+            },
+            "line": 184,
+            "name": "kullanici roomreservation adultamaount bolumune \"2\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2\"",
+                  "offset": 48
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_adultamaount_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 190000000,
+              "status": "passed"
+            },
+            "line": 185,
+            "name": "kullanici roomreservation childrenamount bolumune \"3\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"3\"",
+                  "offset": 50
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_childrenamount_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 176000000,
+              "status": "passed"
+            },
+            "line": 187,
+            "name": "kullanici roomreservation phone bolumune \"0500600700\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"0500600700\"",
+                  "offset": 41
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_phone_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 171000000,
+              "status": "passed"
+            },
+            "line": 188,
+            "name": "kullanici roomreservation email bolumune \"hamza@gmail.com\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"hamza@gmail.com\"",
+                  "offset": 41
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_email_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 170000000,
+              "status": "passed"
+            },
+            "line": 189,
+            "name": "kullanici roomreservation notes bolumune \"Testerlardan selam..\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Testerlardan selam..\"",
+                  "offset": 41
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_notes_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 141000000,
+              "status": "passed"
+            },
+            "line": 190,
+            "name": "kullanici roomreservation save butonuna tiklar",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_save_butonuna_tiklar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 90000000,
+              "status": "passed"
+            },
+            "line": 191,
+            "name": "kullanici roomreservation kayit isleminin basarisiz oldugunu assert eder",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_kayit_isleminin_basarisiz_oldugunu_assert_eder()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@koalapalace"
+          },
+          {
+            "name": "@hotelreservationcreate"
+          },
+          {
+            "name": "@hotelreservationnegativetests"
+          },
+          {
+            "name": "@hotelreservationnegativetest8"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Koala Palace Admin Giris",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7665000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "kullanici koalapalace admin sayfasina gider",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_koalapalace_admin_sayfasina_gider()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 282000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "kullanici kullaniciadi ve sifresini girer",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_kullaniciadi_ve_sifresini_girer()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7829000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "kullanici giris islemini gerceklestirir",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_giris_islemini_gerceklestirir()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-09-30T19:51:55.746Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 195,
+        "name": "TC20_kullanici phone secmeden room reservation olusturur",
+        "description": "",
+        "id": "koala-palace;tc20-kullanici-phone-secmeden-room-reservation-olusturur",
+        "after": [
+          {
+            "result": {
+              "duration": 1359000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 927000000,
+              "status": "passed"
+            },
+            "line": 196,
+            "name": "kullanici hotelroomreservation sayfasina gider",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hotelroomreservation_sayfasina_gider()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 249000000,
+              "status": "passed"
+            },
+            "line": 197,
+            "name": "kullanici roomreservation iduser bolumunde \"manager2\" secer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"manager2\"",
+                  "offset": 43
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_iduser_bolumunde_secer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 260000000,
+              "status": "passed"
+            },
+            "line": 198,
+            "name": "kullanici roomreservation idhotelroom bolumunde \"Hilton\" secer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Hilton\"",
+                  "offset": 48
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_idhotelroom_bolumunde_secer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 182000000,
+              "status": "passed"
+            },
+            "line": 199,
+            "name": "kullanici roomreservation price bolumune \"500\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"500\"",
+                  "offset": 41
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_price_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 468000000,
+              "status": "passed"
+            },
+            "line": 200,
+            "name": "kullanici roomreservation datestart bolumune \"10/10/2020\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"10/10/2020\"",
+                  "offset": 45
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_datestart_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 297000000,
+              "status": "passed"
+            },
+            "line": 201,
+            "name": "kullanici roomreservation dateend bolumune \"10/17/2020\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"10/17/2020\"",
+                  "offset": 43
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_dateend_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 125000000,
+              "status": "passed"
+            },
+            "line": 202,
+            "name": "kullanici roomreservation adultamaount bolumune \"2\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2\"",
+                  "offset": 48
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_adultamaount_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 133000000,
+              "status": "passed"
+            },
+            "line": 203,
+            "name": "kullanici roomreservation childrenamount bolumune \"3\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"3\"",
+                  "offset": 50
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_childrenamount_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 168000000,
+              "status": "passed"
+            },
+            "line": 204,
+            "name": "kullanici roomreservation namesurname bolumune \"Hamza Yılmaz\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Hamza Yılmaz\"",
+                  "offset": 47
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_namesurname_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 170000000,
+              "status": "passed"
+            },
+            "line": 206,
+            "name": "kullanici roomreservation email bolumune \"hamza@gmail.com\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"hamza@gmail.com\"",
+                  "offset": 41
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_email_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 204000000,
+              "status": "passed"
+            },
+            "line": 207,
+            "name": "kullanici roomreservation notes bolumune \"Testerlardan selam..\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Testerlardan selam..\"",
+                  "offset": 41
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_notes_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 201000000,
+              "status": "passed"
+            },
+            "line": 208,
+            "name": "kullanici roomreservation save butonuna tiklar",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_save_butonuna_tiklar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 206000000,
+              "status": "passed"
+            },
+            "line": 209,
+            "name": "kullanici roomreservation kayit isleminin basarisiz oldugunu assert eder",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_kayit_isleminin_basarisiz_oldugunu_assert_eder()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@koalapalace"
+          },
+          {
+            "name": "@hotelreservationcreate"
+          },
+          {
+            "name": "@hotelreservationnegativetests"
+          },
+          {
+            "name": "@hotelreservationnegativetest9"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Koala Palace Admin Giris",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7720000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "kullanici koalapalace admin sayfasina gider",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_koalapalace_admin_sayfasina_gider()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 335000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "kullanici kullaniciadi ve sifresini girer",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_kullaniciadi_ve_sifresini_girer()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10206000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "kullanici giris islemini gerceklestirir",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_giris_islemini_gerceklestirir()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-09-30T19:52:16.487Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 213,
+        "name": "TC21_kullanici email secmeden room reservation olusturur",
+        "description": "",
+        "id": "koala-palace;tc21-kullanici-email-secmeden-room-reservation-olusturur",
+        "after": [
+          {
+            "result": {
+              "duration": 1145000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 900000000,
+              "status": "passed"
+            },
+            "line": 214,
+            "name": "kullanici hotelroomreservation sayfasina gider",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hotelroomreservation_sayfasina_gider()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 180000000,
+              "status": "passed"
+            },
+            "line": 215,
+            "name": "kullanici roomreservation iduser bolumunde \"manager2\" secer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"manager2\"",
+                  "offset": 43
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_iduser_bolumunde_secer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 242000000,
+              "status": "passed"
+            },
+            "line": 216,
+            "name": "kullanici roomreservation idhotelroom bolumunde \"Hilton\" secer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Hilton\"",
+                  "offset": 48
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_idhotelroom_bolumunde_secer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 231000000,
+              "status": "passed"
+            },
+            "line": 217,
+            "name": "kullanici roomreservation price bolumune \"500\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"500\"",
+                  "offset": 41
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_price_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 289000000,
+              "status": "passed"
+            },
+            "line": 218,
+            "name": "kullanici roomreservation datestart bolumune \"10/10/2020\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"10/10/2020\"",
+                  "offset": 45
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_datestart_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 235000000,
+              "status": "passed"
+            },
+            "line": 219,
+            "name": "kullanici roomreservation dateend bolumune \"10/17/2020\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"10/17/2020\"",
+                  "offset": 43
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_dateend_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 109000000,
+              "status": "passed"
+            },
+            "line": 220,
+            "name": "kullanici roomreservation adultamaount bolumune \"2\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2\"",
+                  "offset": 48
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_adultamaount_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 110000000,
+              "status": "passed"
+            },
+            "line": 221,
+            "name": "kullanici roomreservation childrenamount bolumune \"3\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"3\"",
+                  "offset": 50
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_childrenamount_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 134000000,
+              "status": "passed"
+            },
+            "line": 222,
+            "name": "kullanici roomreservation namesurname bolumune \"Hamza Yılmaz\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Hamza Yılmaz\"",
+                  "offset": 47
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_namesurname_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 162000000,
+              "status": "passed"
+            },
+            "line": 223,
+            "name": "kullanici roomreservation phone bolumune \"0500600700\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"0500600700\"",
+                  "offset": 41
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_phone_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 159000000,
+              "status": "passed"
+            },
+            "line": 225,
+            "name": "kullanici roomreservation notes bolumune \"Testerlardan selam..\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Testerlardan selam..\"",
+                  "offset": 41
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_notes_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 132000000,
+              "status": "passed"
+            },
+            "line": 226,
+            "name": "kullanici roomreservation save butonuna tiklar",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_save_butonuna_tiklar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 110000000,
+              "status": "passed"
+            },
+            "line": 227,
+            "name": "kullanici roomreservation kayit isleminin basarisiz oldugunu assert eder",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_kayit_isleminin_basarisiz_oldugunu_assert_eder()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@koalapalace"
+          },
+          {
+            "name": "@hotelreservationcreate"
+          },
+          {
+            "name": "@hotelreservationnegativetests"
+          },
+          {
+            "name": "@hotelreservationnegativetest10"
           }
         ]
       }
     ],
-    "name": "Amazon zurun Arama",
+    "name": "Koala Palace",
     "description": "",
-    "id": "amazon-zurun-arama",
+    "id": "koala-palace",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/parametre.feature",
+    "uri": "file:src/test/resources/features/koalapalace.feature",
     "tags": [
       {
-        "name": "@urunarama1",
+        "name": "@koalapalace",
         "type": "Tag",
         "location": {
           "line": 1,
           "column": 1
-        }
-      },
-      {
-        "name": "@amazon",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 13
         }
       }
     ]

@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
                 "junit:target/xml-report/cucumber.xml"},  // rapor oluşturmak için
         features = "src/test/resources/features",    // features klasörünün adresini
         glue = "stepdefinitions",      // testlerinin içerisinde olduğu paketin ismi
-        tags = "@walmart", // seçtiğiniz tag'a ait testler çalıştırılır.
+        tags = "@hotelreservationnegativetests", // seçtiğiniz tag'a ait testler çalıştırılır.
         dryRun = false // senaryoda oluşturduğumuz anca henüz test methodu yazılmamış
         // olan adımların(steps) methodlarını consol'da görmek için "dryRun = true"
         // şeklinde kullanıyoruz.
